@@ -3,21 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tehelka 007 Clone</title>
+    <title>Tehelka 007 - WhatsApp</title>
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1303330715302279');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1303330715302279&ev=PageView&noscript=1"
+    /></noscript>
     <style>
-        /* Base Styling */
         body {
             margin: 0;
             padding: 20px;
-            background-color: #031403; /* Dark Forest Green */
+            background-color: #031403;
             background-image: 
                 linear-gradient(rgba(0, 255, 0, 0.05) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(0, 255, 0, 0.05) 1px, transparent 1px);
-            background-size: 30px 30px; /* Grid background effect */
+            background-size: 30px 30px;
             font-family: 'Arial', sans-serif;
             color: #ffffff;
             display: flex;
             justify-content: center;
+            min-height: 100vh;
+            align-items: center;
         }
 
         .container {
@@ -26,11 +43,10 @@
             text-align: center;
         }
 
-        /* Logo Area */
         .logo-box {
             border: 3px solid #fcc200;
             padding: 15px;
-            margin: 20px 0 40px 0;
+            margin-bottom: 40px;
             background: #000;
             box-shadow: 0 0 20px rgba(252, 194, 0, 0.5);
         }
@@ -44,7 +60,6 @@
             text-transform: uppercase;
         }
 
-        /* Badges */
         .badges {
             display: flex;
             justify-content: center;
@@ -63,7 +78,6 @@
         .badge-green { color: #4eff4e; border-color: #4eff4e; }
         .badge-red { color: #ff4d4d; border-color: #ff4d4d; }
 
-        /* Stats Cards */
         .stats-grid {
             display: flex;
             gap: 15px;
@@ -93,58 +107,44 @@
         .active-users {
             font-size: 26px;
             font-weight: bold;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
 
-        /* Bonus Box */
-        .bonus-box {
-            border: 2px solid #fcc200;
-            border-radius: 15px;
-            padding: 15px;
-            margin-bottom: 30px;
-            display: flex;
-            align-items: center;
-            text-align: left;
-            background: rgba(0, 0, 0, 0.4);
-        }
-
-        .gift-icon { font-size: 40px; margin-right: 15px; }
-
-        .bonus-text h4 { color: #fcc200; margin: 0; font-size: 18px; }
-        .bonus-text p { margin: 5px 0 0 0; font-size: 13px; color: #eee; }
-
-        /* Buttons Section */
-        .btn {
+        /* Blinking WhatsApp Button */
+        .btn-whatsapp {
             display: block;
             width: 100%;
-            padding: 18px;
+            padding: 20px;
             border-radius: 12px;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
             text-decoration: none;
-            margin-bottom: 15px;
             box-sizing: border-box;
             text-align: center;
-            transition: transform 0.2s;
-        }
-
-        .btn:active {
-            transform: scale(0.98);
-        }
-
-        /* Telegram Button - Red/Green Gradient */
-        .btn-telegram {
-            background: linear-gradient(to right, #1d5b1d, #8b0000);
-            color: white;
-            border: none;
-            text-transform: uppercase;
-        }
-
-        /* WhatsApp Button - Green Border */
-        .btn-whatsapp {
             background: transparent;
-            border: 2px solid #4eff4e;
+            border: 3px solid #4eff4e;
             color: #4eff4e;
+            text-transform: uppercase;
+            animation: blink-animation 1s steps(5, start) infinite;
+            -webkit-animation: blink-animation 1s steps(5, start) infinite;
+        }
+
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+        @-webkit-keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+
+        /* Hover to stop blink (Optional for usability) */
+        .btn-whatsapp:hover {
+            animation: none;
+            background: #4eff4e;
+            color: #031403;
         }
     </style>
 </head>
@@ -173,17 +173,7 @@
 
         <div class="active-users">1Lac+ active user</div>
 
-        <div class="bonus-box">
-            <span class="gift-icon">🎁</span>
-            <div class="bonus-text">
-                <h4>25% WELCOME BONUS</h4>
-                <p>On joining our Telegram channel</p>
-            </div>
-        </div>
-
-        <a href="#" class="btn btn-telegram">JOIN TELEGRAM CHANNEL</a>
-        
-        <a href="#" class="btn btn-whatsapp">Join WhatsApp Group</a>
+        <a href="https://wa.link/qm94wa" class="btn-whatsapp">Get Id For WhatsApp</a>
     </div>
 
 </body>
