@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tehelka 007 - Get Id For WhatsApp</title>
-
+    <title>TEHELKA007 - Official Site</title>
+    
+    <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -14,202 +15,148 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1303330715302279');
+    fbq('init', '1153568436399421');
     fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1303330715302279&ev=PageView&noscript=1"
-    /></noscript>
+    <noscript>
+        <img height="1" width="1" style="display:none" 
+             src="https://www.facebook.com/tr?id=1153568436399421&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
     <style>
         body {
             margin: 0;
-            padding: 20px;
-            background-color: #031403;
-            background-image: 
-                linear-gradient(rgba(0, 255, 0, 0.05) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 255, 0, 0.05) 1px, transparent 1px);
-            background-size: 30px 30px;
-            font-family: 'Arial', sans-serif;
-            color: #ffffff;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(circle, #1a1a2e, #16213e, #0f3460);
+            color: white;
             display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
             min-height: 100vh;
-            align-items: center;
+            text-align: center;
         }
 
         .container {
-            width: 100%;
-            max-width: 400px;
-            text-align: center;
+            width: 90%;
+            max-width: 450px;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .logo-box {
-            border: 3px solid #fcc200;
-            padding: 15px;
-            margin-bottom: 40px;
-            background: #000;
-            box-shadow: 0 0 20px rgba(252, 194, 0, 0.5);
-        }
-
-        .logo-text {
-            color: #fcc200;
-            font-size: 28px;
-            font-weight: bold;
-            letter-spacing: 2px;
+        h1 {
+            font-size: 2.8rem;
             margin: 0;
+            color: #ffcc00;
+            letter-spacing: 2px;
+            text-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+        }
+
+        .bonus-tag {
+            background: #e94560;
+            color: white;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin: 15px 0;
             text-transform: uppercase;
         }
 
-        .badges {
+        .features {
             display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 25px;
+            justify-content: space-around;
+            margin: 20px 0;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #00d2ff;
         }
 
-        .badge {
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: bold;
-            border: 1.5px solid;
+        .feature-item {
+            border: 1px solid #00d2ff;
+            padding: 5px 10px;
+            border-radius: 8px;
         }
 
-        .badge-green { color: #4eff4e; border-color: #4eff4e; }
-        .badge-red { color: #ff4d4d; border-color: #ff4d4d; }
-
-        .stats-grid {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-
-        .stat-card {
-            flex: 1;
-            background: #0a240a;
-            padding: 20px 10px;
-            border-radius: 15px;
-            border: 1px solid #1a4d1a;
-        }
-
-        .stat-card h2 {
-            color: #fcc200;
-            font-size: 30px;
-            margin: 0;
-        }
-
-        .stat-card p {
-            font-size: 12px;
-            color: #ccc;
-            margin-top: 5px;
-        }
-
-        .active-users {
-            font-size: 26px;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-
-        /* Re-added: Bonus Boxes from original image */
-        .bonus-section {
-            display: flex;
-            justify-content: space-between;
-            gap: 15px;
-            margin-bottom: 30px;
-            text-align: left;
-        }
-
-        .bonus-box {
-            flex: 1;
-            border: 2px solid #fcc200;
-            border-radius: 15px;
-            padding: 15px;
-            background: rgba(0, 0, 0, 0.4);
-            box-shadow: 0 0 10px rgba(252, 194, 0, 0.2);
-        }
-
-        .bonus-text h4 { color: #fcc200; margin: 0; font-size: 16px; font-weight: bold; }
-        .bonus-text p { margin: 5px 0 0 0; font-size: 12px; color: #eee; }
-
-        /* Blinking WhatsApp Button (As requested previously) */
-        .btn-whatsapp {
+        .btn {
             display: block;
             width: 100%;
-            padding: 20px;
-            border-radius: 12px;
-            font-size: 20px;
-            font-weight: bold;
+            padding: 18px 0;
+            margin: 20px 0;
+            font-size: 1.4rem;
+            font-weight: 800;
             text-decoration: none;
-            box-sizing: border-box;
-            text-align: center;
-            background: transparent;
-            border: 3px solid #4eff4e;
-            color: #4eff4e;
+            color: white;
+            border-radius: 12px;
             text-transform: uppercase;
-            animation: blink-animation 1s steps(5, start) infinite;
-            -webkit-animation: blink-animation 1s steps(5, start) infinite;
+            transition: 0.3s;
         }
 
-        @keyframes blink-animation {
-            to {
-                visibility: hidden;
-            }
-        }
-        @-webkit-keyframes blink-animation {
-            to {
-                visibility: hidden;
-            }
+        /* Blinking Animation */
+        @keyframes blinker {
+            50% { opacity: 0.5; transform: scale(0.98); }
         }
 
-        /* Hover to stop blink (Optional for usability) */
-        .btn-whatsapp:hover {
-            animation: none;
-            background: #4eff4e;
-            color: #031403;
+        .telegram-btn {
+            background: linear-gradient(90deg, #0088cc, #00aaff);
+            box-shadow: 0 5px 20px rgba(0, 136, 204, 0.4);
+            animation: blinker 1.2s linear infinite;
+        }
+
+        .whatsapp-btn {
+            background: linear-gradient(90deg, #25d366, #128c7e);
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+            animation: blinker 1.2s linear infinite;
+            animation-delay: 0.6s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            filter: brightness(1.2);
+        }
+
+        .trust-text {
+            font-size: 0.85rem;
+            margin-top: 15px;
+            color: #aaa;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="logo-box">
-            <p class="logo-text">TEHELKA 007</p>
+        <h1>TEHELKA007</h1>
+        
+        <div class="bonus-tag">🎁 25% Joining Bonus Offer</div>
+
+        <div class="features">
+            <div class="feature-item">⚡ Fast Deposit</div>
+            <div class="feature-item">💰 Quick Withdrawal</div>
         </div>
 
-        <div class="badges">
-            <div class="badge badge-green">🏆 Elite Analyst</div>
-            <div class="badge badge-red">⚡ Live Updates</div>
+        <p style="margin-bottom: 10px;">India's Most Trusted Analysis Channel</p>
+
+        <!-- Telegram Button -->
+        <a href="YOUR_TELEGRAM_LINK_HERE" class="btn telegram-btn">
+            Join Telegram
+        </a>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/YOUR_NUMBER_HERE" class="btn whatsapp-btn">
+            WhatsApp for ID
+        </a>
+
+        <p class="trust-text">100% Secure & Trusted Platform</p>
+        
+        <div style="font-size: 0.7rem; margin-top: 20px; opacity: 0.5;">
+            &copy; 2026 TEHELKA007
         </div>
-
-        <div class="stats-grid">
-            <div class="stat-card">
-                <h2>750+</h2>
-                <p>Live Casino Tables</p>
-            </div>
-            <div class="stat-card">
-                <h2>5000+</h2>
-                <p>Games Available</p>
-            </div>
-        </div>
-
-        <div class="active-users">1Lac+ active user</div>
-
-        <div class="bonus-section">
-            <div class="bonus-box">
-                <div class="bonus-text">
-                    <h4>25% WELCOME OFFER</h4>
-                    <p>On joining our Telegram channel</p>
-                </div>
-            </div>
-            <div class="bonus-box">
-                <div class="bonus-text">
-                    <h4>FASTEST WITHDRAWAL</h4>
-                    <p>Get your money in 1 minute</p>
-                </div>
-            </div>
-        </div>
-
-        <a href="https://wa.link/qm94wa" class="btn-whatsapp">Join Telegram Channel</a>
     </div>
 
 </body>
