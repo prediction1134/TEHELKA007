@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehelka 007 Clone</title>
+    <style>
+        /* Base Styling */
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #031403; /* Dark Forest Green */
+            background-image: 
+                linear-gradient(rgba(0, 255, 0, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 0, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px; /* Grid background effect */
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        /* Logo Area */
+        .logo-box {
+            border: 3px solid #fcc200;
+            padding: 15px;
+            margin: 20px 0 40px 0;
+            background: #000;
+            box-shadow: 0 0 20px rgba(252, 194, 0, 0.5);
+        }
+
+        .logo-text {
+            color: #fcc200;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        /* Badges */
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        .badge {
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            border: 1.5px solid;
+        }
+
+        .badge-green { color: #4eff4e; border-color: #4eff4e; }
+        .badge-red { color: #ff4d4d; border-color: #ff4d4d; }
+
+        /* Stats Cards */
+        .stats-grid {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            flex: 1;
+            background: #0a240a;
+            padding: 20px 10px;
+            border-radius: 15px;
+            border: 1px solid #1a4d1a;
+        }
+
+        .stat-card h2 {
+            color: #fcc200;
+            font-size: 30px;
+            margin: 0;
+        }
+
+        .stat-card p {
+            font-size: 12px;
+            color: #ccc;
+            margin-top: 5px;
+        }
+
+        .active-users {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        /* Bonus Box */
+        .bonus-box {
+            border: 2px solid #fcc200;
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .gift-icon { font-size: 40px; margin-right: 15px; }
+
+        .bonus-text h4 { color: #fcc200; margin: 0; font-size: 18px; }
+        .bonus-text p { margin: 5px 0 0 0; font-size: 13px; color: #eee; }
+
+        /* Buttons Section */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Telegram Button - Red/Green Gradient */
+        .btn-telegram {
+            background: linear-gradient(to right, #1d5b1d, #8b0000);
+            color: white;
+            border: none;
+            text-transform: uppercase;
+        }
+
+        /* WhatsApp Button - Green Border */
+        .btn-whatsapp {
+            background: transparent;
+            border: 2px solid #4eff4e;
+            color: #4eff4e;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-box">
+            <p class="logo-text">TEHELKA 007</p>
+        </div>
+
+        <div class="badges">
+            <div class="badge badge-green">🏆 Elite Analyst</div>
+            <div class="badge badge-red">⚡ Live Updates</div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h2>750+</h2>
+                <p>Live Casino Tables</p>
+            </div>
+            <div class="stat-card">
+                <h2>5000+</h2>
+                <p>Games Available</p>
+            </div>
+        </div>
+
+        <div class="active-users">1Lac+ active user</div>
+
+        <div class="bonus-box">
+            <span class="gift-icon">🎁</span>
+            <div class="bonus-text">
+                <h4>25% WELCOME BONUS</h4>
+                <p>On joining our Telegram channel</p>
+            </div>
+        </div>
+
+        <a href="#" class="btn btn-telegram">JOIN TELEGRAM CHANNEL</a>
+        
+        <a href="#" class="btn btn-whatsapp">Join WhatsApp Group</a>
+    </div>
+
+</body>
+</html>
